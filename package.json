@@ -9,8 +9,8 @@
     "type": "git"
   },
   "scripts": {
-    "build": "cd client && yarn install && yarn build && cd ..",
-    "deploy": "cp -a client/build/. public/",
+    "build": "yarn install && yarn build",
+    "deploy": "cp -a build/. public/",
     "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
   "engines": {
