@@ -1,0 +1,47 @@
+{
+  "name": "open_flights",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "description": "The best package you will ever find.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/SSE73/open_flights",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+  "engines": {
+//    "yarn": "1.21.1",
+//    "npm": "6.11.3",
+//    "node": "12.11.1"
+    "yarn": "1.22.5",
+    "npm":  "6.14.8",
+    "node": "v14.15.1",
+
+  },
+  "author": "CerberSSE",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-react": "^7.12.5",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.3.0",
+    "axios": "^0.21.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "font-awesome": "^4.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1",
+    "turbolinks": "^5.2.0"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
