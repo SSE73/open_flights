@@ -1,25 +1,6 @@
 {
   "name": "open_flights",
   "private": true,
-  "proxy": "http://localhost:3001",
-  "description": "The best package you will ever find.",
-  "main": "index.js",
-  "repository": {
-    "url": "https://github.com/SSE73/open_flights",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "yarn install && yarn build",
-    "deploy": "cp -a build/. public/",
-    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
-  },
-  "engines": {
-    "yarn": "1.22.5",
-    "npm":  "6.14.8",
-    "node": "v14.15.1"
-  },
-  "author": "CerberSSE",
-  "license": "MIT",
   "dependencies": {
     "@babel/preset-react": "^7.12.5",
     "@rails/actioncable": "^6.0.0",
